@@ -1,0 +1,16 @@
+{
+  "_comment": "This is a TEMPLATE. Copy to users.json and run: python auth.py",
+  "_note": "Do NOT commit users.json — it contains real credentials (already in .gitignore)",
+  "admin": {
+    "name": "Admin User",
+    "role": "admin",
+    "password_hash": "REPLACE_WITH_HASH_FROM_python_auth.py",
+    "salt": "REPLACE_WITH_SALT_FROM_python_auth.py"
+  },
+  "agent1": {
+    "name": "Agent One",
+    "role": "agent",
+    "password_hash": "REPLACE_WITH_HASH_FROM_python_auth.py",
+    "salt": "REPLACE_WITH_SALT_FROM_python_auth.py"
+  }
+}

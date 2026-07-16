@@ -1,0 +1,60 @@
+# ==============================================================================
+# .gitignore — LoopBack Social Inbox Autopilot
+# ==============================================================================
+
+# ── Secrets & Credentials (NEVER commit these) ────────────────────────────────
+.env
+# Note: .env.* would also catch .env.example which we WANT to commit, so we
+# only ignore the bare .env file above. Add specific variants if needed:
+# .env.local
+# .env.production
+
+# Authentication — NEVER commit real user credentials
+# Use users.example.json as the template instead
+users.json
+
+# ── SQLite Databases ──────────────────────────────────────────────────────────
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ── Log Files ─────────────────────────────────────────────────────────────────
+*.log
+triage.log
+executor.log
+webhook.log
+dashboard.log
+
+# ── Runtime / Generated State Files ──────────────────────────────────────────
+chat_history.json
+chat_history_broken.json
+seen_ids.json
+training_signals.jsonl
+backup.json
+qwen_chat_export.txt
+hackathon_chat.txt
+
+# ── Python Cache & Virtual Environments ───────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.venv/
+env/
+.env/
+
+# ── OS / Editor Files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ── Windows Dev Helper (local convenience, not for repo consumers) ─────────────
+Start_Work.bat
