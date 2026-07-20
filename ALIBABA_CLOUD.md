@@ -8,7 +8,7 @@ This project is fully powered by **Alibaba Cloud's DashScope (Model Studio)** in
 
 The autopilot agent integrates with Alibaba Cloud APIs in the following code locations:
 
-### 🤖 Triage Engine ([triage.py](file:///c:/Users/mouad/Downloads/qwen-hackathon-test/triage.py))
+### 🤖 Triage Engine ([triage.py](triage.py))
 *   **Alibaba Cloud DashScope Endpoint:** Initialized using the official internationally compatible base URL:
     ```python
     client = OpenAI(
@@ -20,7 +20,7 @@ The autopilot agent integrates with Alibaba Cloud APIs in the following code loc
 *   **Fallback Model (`qwen-turbo`):** Dynamically triggered during outages or token limit exhaustion via our fallback recovery mechanism.
 *   **Structured Tool-Calling:** Leverages Alibaba Cloud Model Studio's tool-calling capability to route requests natively without regex parser hacks.
 
-### 📤 Automated Executor ([executor.py](file:///c:/Users/mouad/Downloads/qwen-hackathon-test/executor.py))
+### 📤 Automated Executor ([executor.py](executor.py))
 *   **CRM Tagging Tool:** Uses DashScope APIs to automatically categorize finalized customer support transcripts (`tag_for_crm`).
 *   **Personalization Engine:** Coordinates DashScope to formulate localized, personalized replies after dynamically fetching shipping tracking details.
 
